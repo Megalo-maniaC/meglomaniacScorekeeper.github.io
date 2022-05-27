@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scorekeeper/style.css">
+    
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+      body{
+        background: url(https://images.unsplash.com/photo-1617957848716-7585a98106ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+        height: 100vh;
+      }
+    </style>
+
+
+    <title>Score Keeper</title>
+</head>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <figure class="image is-2by1">
+                    <img src="/scorekeeper/image/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg" alt="">
+                </figure>
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Ping Pong Score Keeper
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="subtitle">Use these for scores</p>
+                        
+                        <label for="playto" class="label is-large is-inline">Playing to</label>
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <!-- <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option> -->
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button card-footer-item is-primary is-large"> +1 Player 1</button>
+                        <button id="p2Button" class="button card-footer-item is-info is-large"> +1 Player 2</button>
+                        <button id="reset" class="button card-footer-item is-danger is-large"> Reset</button>
+                      <!-- <a href="#" class="card-footer-item">Save</a>
+                      <a href="#" class="card-footer-item">Edit</a>
+                      <a href="#" class="card-footer-item">Delete</a> -->
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <script src="/scorekeeper/app.js"></script>
+</body>
+</html>
